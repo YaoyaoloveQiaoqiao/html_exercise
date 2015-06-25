@@ -1,0 +1,58 @@
+01
+* html标记的类型：单标记和双标记。
+  单标记
+    &<标记名称>无属性值eg.<br/>
+    &<标记名称 属性="属性值">有属性值 eg.<hr width="80%"/>
+  双标记
+    &<开始标记名称>内容</ 结束标记名称> eg.<title>```</title>
+    &<开始标记名称 属性="属性值">内容</结束标记名称> eg.<body bground="red">```</body>
+
+02 三种样式表插入方法：
+   外部样式表：
+       新建一个css文件，在html文件头中加上这个
+       <link rel="stylesheet" type="text/css" href="mystyle.css">
+   内部样式表：
+       <style type="text/css">
+       body{background-color: red}
+       </style>
+   内联样式表：
+       <p style="color: red">
+03 html链接
+* 链接数据：
+   文本链接<a href="http://www.baidu.com">点击我</a>
+   图片链接<a href="http://www.baidu.com">
+   <img src="yaoyo.jpg" width="60px" height="100px" alt="tutututu">
+</a>
+* 属性：
+   href属性：指向另一个文档的链接
+   name属性：创建文档内部的链接
+   <a name="tips">hello</a>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <a href="#tips">跳转到hello</a>
+*img标签属性
+   alt：替换文本
+   width：宽
+   height：高
+
+04 html表格 //index02
+* <table> 定义表格
+  <caption>表头
+  <th>标题
+  <td>单元，列
+  <tr>行（能包含其他）
+  <lu>行
+  <li>带点的行
+
+05列表 
+  <ol>  有序列表   type A a I i    start 从n开始
+  <ul>  无序列表  type圆点，空心圆点，方块点  
+  <li>  列表项
+  <dl>  列表  
+  <dt>  列表项
+  <dd>  描述  前面没点
+  

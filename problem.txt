@@ -1,0 +1,4 @@
+&&<br>与<br/>什么区别  由于xhtml必须关闭，所以加了
+&&<style type="text/css">
+    p{color : red;}
+</style> 实现不了，为什么
