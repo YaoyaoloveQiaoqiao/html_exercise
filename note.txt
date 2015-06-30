@@ -58,4 +58,13 @@
 
 ####注：看清是否有空格，会影响显示效果  eg css中，#id{  }  没有空格
 ####注：css中，id要加#，标签不需要 eg #content_menu  body{  }
+
+06 html块
+   html块元素（显示时以新行开始）eg.<h1> <p>  <ul>
+   html内联元素 （不会以新行开始）eg.<b> <a>  <img>
+   html<div>元素 （组合html元素的容器）
+   html<span>元素 （作为文本的容器）
+07 布局
+   用<div>元素布局
+   用<table>元素布局
   
