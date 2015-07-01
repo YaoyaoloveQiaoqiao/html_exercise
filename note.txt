@@ -67,4 +67,14 @@
 07 布局
    用<div>元素布局
    用<table>元素布局
-  
+08 表单 （index 08）
+  <form>  表单
+  <input>输入域
+  <textarea>文本域
+  <label>控制标签
+  <fieldset>定义域
+  <legend>域的标题
+  <select>选择列表
+<optgroup>选项组
+<option>下拉列表中的选项
+<button>按钮
