@@ -75,6 +75,12 @@
   <fieldset>定义域
   <legend>域的标题
   <select>选择列表
-<optgroup>选项组
-<option>下拉列表中的选项
-<button>按钮
+  <optgroup>选项组
+  <option>下拉列表中的选项
+  <button>按钮
+09 html框架 (index08)
+  框架标签（frame）
+  内联框架（iframe）
+  用<iframe>的target选项可以选择是链接在本页面打开，还是在新页面打开，还是在父容器打开，还是top打开。
+  <iframe src="framec.html" frameborder="0" width="800px" height="800px ">
+  </iframe>
