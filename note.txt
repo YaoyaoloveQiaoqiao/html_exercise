@@ -84,3 +84,10 @@
   用<iframe>的target选项可以选择是链接在本页面打开，还是在新页面打开，还是在父容器打开，还是top打开。
   <iframe src="framec.html" frameborder="0" width="800px" height="800px ">
   </iframe>
+08 html 背景
+  背景标签 Background 
+  背景颜色 Bgcolor
+09 html 实体 （index 09）
+  在网页里显示<html> ,用&lt;html&gt;
+10 XHTML的使用规范
+  
