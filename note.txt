@@ -1,3 +1,4 @@
+一 html基本用法
 01
 * html标记的类型：单标记和双标记。
   单标记
@@ -45,7 +46,7 @@
   <th>标题
   <td>单元，列
   <tr>行（能包含其他）
-  <lu>行
+  <ul>行
   <li>带点的行
 
 05列表 
@@ -90,4 +91,36 @@
 09 html 实体 （index 09）
   在网页里显示<html> ,用&lt;html&gt;
 10 XHTML的使用规范
+   可扩展超文本标记语言
+   元素必须正确嵌套 <h1><p>html</p></h1>
+   必须关闭 <h1></h1>  <br />
+   元素必须小写  XHTML文档必须有一个根元素<body></body>
+   属性必须小写，值用引号包围，属性最小化也是有禁止的（意思是不能简写）。
   
+二 css3 基本用法
+01 css基础语法
+   1.selector {
+              property:value  
+              }
+    例：h1{color:red;font-size:14px;}
+    属性大于1个，属性之间用分号隔开
+    如果值大于1个单词，则需要加引号：
+       p{font-family:"sans serif";}
+   将css文件link进去才可以的。
+   <link href="css01.css" type="text/css" rel="stylesheet">
+   href内文件是相对路径
+  2.选择器分组：
+    h1,h2,h3{color:red;}
+  3.继承：若其中元素没有特定样式，继承父容器样式。
+    body{ color:green;}
+02 css派生选择器
+    通过依据元素在其位置的上下文关系来定义样式。
+    li strong{
+	color:#F39;
+	}
+03 id 选择器
+    可以为标有id的HTML元素制定特定的样式    以“#”来定义
+    #divid p{
+	color:#6F9;
+	}
+04
