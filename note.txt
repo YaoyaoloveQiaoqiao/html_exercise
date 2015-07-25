@@ -123,4 +123,14 @@
     #divid p{
 	color:#6F9;
 	}
-04
+04 类选择器 (id选择器优先级高于类选择器)
+    以一个点显示“.”
+05 属性选择器
+   对带有指定属性的html元素设置样式
+  
+   [title]{
+	color:blue;
+   }
+   [title=a]{
+	color:red;
+   }

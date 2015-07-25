@@ -1,16 +1,17 @@
 @charset "utf-8";
 /* CSS Document */
-li strong{
-	color:#F39;
-	}
-strong{
-	color:#3CF;
-	}
 
-#divid p{
+
+#divid {
 	color:#6F9;
 	}
 	
 div{
 	color:#C36;
+	}
+.divclass{
+	color:#999;
+	}
+[title]{
+	color:red;
 	}
