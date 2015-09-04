@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css02.css"/>
+</head>
+
+<body onbeforeunload="alert('The onunload event was triggered')">
+<form>
+    <input type="text" onchange="alert('miao')" />
+    <input type="text" onselect="demo2(this)" onfocus="demo3(this)"/>
+</form>
+<button id="btn">按钮</button>
+<script>
+    var x=document.getElementById("btn");
+	x.addEventListener("click",demo);
+    function demo(){
+	    alert("sfdfds");	
+	}
+	function demo2(bg){
+		bg.style.background="red";
+	}
+	function demo3(bg){
+	    bg.style.background="blue";	
+	}
+</script>
+<div class="div"></div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>js语法详解</title>
+<link type="text/css" rel="stylesheet" href="css01.css" />
+</head>
+
+<body onload="mgs()">
+<div class="div" onmouseout="onOut(this)" onmouseover="onOver(this)"></div>
+<script>
+    function onOver(ooj){
+		ooj.innerHTML="hello";
+	    	
+	}
+	function onOut(ooj){
+	    ooj.innerHTML="world";	
+	
+	function mgs(){
+		alert("memeda");
+	}
+	}
+    
+</script>
+<p>i=10,j=10;i+j=?</p>
+<p id="sumid"></p>
+<button onclick="mysum()">sum</button>
+<form>
+    <input id="txt" type="text" />
+    <input id="btn" type="button" value="按钮" onclick="demo()" />
+</form>
+<script>
+    function demo(){
+	    try{
+			var e=document.getElementById("txt").value;
+			if(e==""){
+			    throw"请输入";	
+			}
+		}catch(err){
+		    alert(err);	
+		}
+	}
+</script>
+<!--<script>
+    function mysum(){
+		var i=10;
+		var j=10;
+		var m=i+j;
+		document.getElementById("sumid").innerHTML=m;
+	}
+	function demo(){
+	    try{
+		    alert(str);	
+		}catch(err){
+			alert(err);
+		}	
+	}
+	demo();*/-->
+
+
+</body>
+</html>

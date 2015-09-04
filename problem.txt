@@ -1,4 +1,15 @@
 &&<br>与<br/>什么区别  由于xhtml必须关闭，所以加了
 &&<style type="text/css">
     p{color : red;}
-</style> 实现不了，为什么
+</style> 
+实现不了，为什么
+&&<table class="tb">
+table{
+	border-collapse:collapse;
+	}
+就能实现合并边框
+#tb {
+	border-collapse:collapse;
+	}
+这个就实现不了
+&&js事件，onUnload 关闭网页事件 ，用alert，在关闭或刷新时无法显示

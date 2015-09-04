@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+/*div{
+	width:100px;
+	height:100px;
+	background-color:#09C;
+	-webkit-transition: width 2s,height 2s,-webkit-transform 2s;
+	transition: width 2s,height 2s,transform 2s;
+}
+div:hover{
+	width:200px;
+	height:200px;
+	transform:rotate(360deg);
+	-webkit-transform:rotate(360deg);
+}
+*/
+/*div{
+	width:100px;
+	height:100px;
+	background-color:red;
+	position:relative;
+	animation:anim 5s infinite alternate;
+	-webkit-animation:anim 5s infinite alternate;
+}
+@keyframes anim{
+	0%{background: red;left: 0px;top: 0px;}
+	50%{background: blue;left: 200px;top: 200px;}
+	100%{background: green;left: 400px;top: 0px;}
+}
+@-webkit-keyframes anim{
+	0%{background: red;left: 0px;top: 0px;}
+	50%{background: blue;left: 200px;top: 200px;}
+	100%{background: green;left: 400px;top: 0px;}
+}*/
+.div1{
+    column-count:3;
+	-webkit-column-count:3;
+	column-gap:30px;
+	-webkit-column-gap:30px;
+	column-rule:5px outset #FF0000;
+	-webkit-column-rule:5px outset #FF0000;
+}
+.container{
+	column-width:250px;
+	-webkit-column-width:250px;
+	column-gap:5px;
+	-webkit-column-gap:5px;
+}
+.container div{
+	width:250px;
+	margin:5px;
+	
+}

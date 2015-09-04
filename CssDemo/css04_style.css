@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	    background-image:url(../htmlDemo/miaowu.jpg);
+		background-repeat:no-repeat;
+		/*background-position:right top; right表示在屏幕的右侧，top表示图片从顶部开始显示，也可100px 90px*/
+	
+		background-size:300px 400px;
+		background-origin:padding-box;
+	}
+p{
+	
+	width:100px;
+	padding:10px;
+	direction:rtl;
+	outline-color:#F3F;
+	outline-style:dotted;
+	outline-width:thin;
+  }
+a:link{
+	color:#FF0000;
+	text-decoration:none;
+	}
+a:visited{
+	color:#00FF00;
+	}
+a:hover{
+	color:#0000FF;
+	}
+ul li{
+	list-style-image:url("../htmlDemo/miaowu.jpg");
+	}
+#tb tr,th,td{
+	border:1px solid #96C;
+	background-color:#CFF;
+	width:200px;
+	height:200px;
+	text-align:center;
+	border-collapse:separate;
+	}

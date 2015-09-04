@@ -2,8 +2,8 @@
 01
 * html标记的类型：单标记和双标记。
   单标记
-    &<标记名称>无属性值eg.<br/>
-    &<标记名称 属性="属性值">有属性值 eg.<hr width="80%"/>
+    &<标记名称>无属性值  eg.<br/>
+    &<标记名称 属性="属性值">有属性值  eg.<hr width="80%"/>
   双标记
     &<开始标记名称>内容</ 结束标记名称> eg.<title>```</title>
     &<开始标记名称 属性="属性值">内容</结束标记名称> eg.<body bground="red">```</body>
@@ -85,9 +85,12 @@
   用<iframe>的target选项可以选择是链接在本页面打开，还是在新页面打开，还是在父容器打开，还是top打开。
   <iframe src="framec.html" frameborder="0" width="800px" height="800px ">
   </iframe>
-08 html 背景
+08 html 背景09
   背景标签 Background 
   背景颜色 Bgcolor
+  <body background="miaowu.jpg">
+    &lt;html&gt;   <!-- 实体 -->
+  </body>
 09 html 实体 （index 09）
   在网页里显示<html> ,用&lt;html&gt;
 10 XHTML的使用规范
@@ -98,7 +101,8 @@
    属性必须小写，值用引号包围，属性最小化也是有禁止的（意思是不能简写）。
   
 二 css3 基本用法
-01 css基础语法
+1.入门基本知识
+1-01 css基础语法
    1.selector {
               property:value  
               }
@@ -113,24 +117,361 @@
     h1,h2,h3{color:red;}
   3.继承：若其中元素没有特定样式，继承父容器样式。
     body{ color:green;}
-02 css派生选择器
+1-02 css派生选择器
     通过依据元素在其位置的上下文关系来定义样式。
     li strong{
 	color:#F39;
 	}
-03 id 选择器
+1-03 id 选择器
     可以为标有id的HTML元素制定特定的样式    以“#”来定义
     #divid p{
 	color:#6F9;
 	}
-04 类选择器 (id选择器优先级高于类选择器)
+1-04 类选择器 (id选择器优先级高于类选择器)
     以一个点显示“.”
-05 属性选择器
+1-05 属性选择器
    对带有指定属性的html元素设置样式
   
    [title]{
 	color:blue;
    }
+   属性和值选择器
    [title=a]{
 	color:red;
    }
+2 基本样式讲解（index04）
+2-01 css文本
+   css文本属性可定义文本外观
+   color 文本颜色
+   direction 文本方向
+   text-transform 元素中的字母
+   text-indent 缩进元素中的文本的首行
+   text-align 对齐方式
+   eg：text-align:left;
+    text-indent:2em; 
+2-02 css字体
+   font-family 设置字体系列
+   @font-face{
+       font-family:myfont;
+       src:url();
+   }
+   div{
+       font-family:myfont;
+   }
+   font-size 设置字体大小
+2-03 css链接
+   链接四种状态：
+  a:link 普通的、未被访问的链接
+  a:visited 用户已访问的链接
+  a:hover 鼠标指位于链接的上方
+  a:active 链接被点击的时刻
+  text-decoration 属性大多用于去掉链接中的下划线link
+  eg：a:link{
+	color:#FF0000;
+	text-decoration:none;
+	}
+  background-color 设置背景颜色（仅限于a标签内的背景颜色）
+
+####注：id与class区别
+  id不可重复，相当于身份证号； 先找到结构内容，再加载样式； 用于框架级构造
+  class 可重复，相当于名字； 先加载样式，再找内容； 用于内部数据
+2-04 css列表 
+  list-style 简写列表项
+  list-style-image 列表项图像
+  ul li{
+	list-style-image:url("../htmlDemo/miaowu.jpg");
+	}
+  list-style-position 列表标志位置
+  list-style-type 列表类型（circle 空心圆 decimal 数字）
+2-05 css表格
+  表格边框 表格颜色 border:1px solid #96C;
+  折叠边框table{
+	border-collapse:collapse;
+	}
+  表格宽高width:200px;
+	height:200px;
+  表格文本对齐text-align:center;
+  表格内边距padding=5px
+  文字颜色 color：
+  
+  
+2-06 css背景
+  属性：
+  background-attachment 背景图像是否固定或者随着页面的其余部分滚动
+  background-color  背景颜色
+  background-image:url(../htmlDemo/miaowu.jpg); 背景图片
+  background-position:right top; right表示在屏幕的右侧，top表示图片从顶部开始显示，也可100px 90px
+  background-repeat 图片是否重复以及如何重复
+  background-size 规定背景图片的尺寸
+  background-origin:规定背景图片的定位区域
+  background-clip:规定背景的绘制区域
+2-07 css轮廓
+  outline-color  轮廓颜色
+  outline-style  轮廓样式
+  outline-width  轮廓宽度
+3.定位（index05）
+3-01 css定位属性
+  position（把元素放在一个静态的、相对的、绝对的或固定的位置中）   
+             relative 相对的，和边，还有其他组件都有距离
+             absolute 好像不占位置，会覆盖了
+             fixed  不会随滚动而滚走
+             static  与absolute表面一样，但是偏移量对其没影响
+  z-index（设置元素的堆叠顺序）    谁的值大，谁显示在前面
+  top （元素向上的偏移量）
+  left （元素向左的偏移量）
+  right （元素向右的偏移量）
+  bottom （元素向下的偏移量）
+  overflow （设置元素溢出其区域发生的事情）
+  vertical-align （设置元素垂直对齐方式）
+  clip （设置元素显示的形状）
+3-02 css浮动
+  1 浮动：
+      float属性可用的值：
+          left：元素向左浮动
+          right：元素向右移动
+          none：元素不浮动
+          inherit：从父级继承浮动属性
+  2 clear属性：
+      去掉浮动属性（包括继承来的属性）
+      clear属性值：
+           left、right：去掉元素向左、向右浮动
+           both：左右两侧均去掉浮动
+           inherit：从父级继承来clear的值
+3-03 css浮动定位应用
+实现瀑布流的一种方法
+*{
+	margin:0px;
+	padding:0px;
+}
+li{
+    list-style:none;
+}
+#div1{
+	width:950px;
+	height:auto;
+	margin:20px; auto;
+}
+ul{
+	width:250px;
+	float:left;
+}
+
+   css图片大小设置
+   img{
+       width
+       height
+   }  
+4 css盒子模型
+
+4-01 外边距  （围绕在内容边框的区域，默认为透明区域，外边距接受任何长度单位，百分数）
+     属性：margin  margin-bottom/left/right/top
+     .container{
+	margin:100px;
+}
+.bd{
+	border-style:dotted;
+}
+.pd{
+	padding:100px;
+}
+.content{
+	background-color:blue;
+}
+4-02 css边框
+ border-style 10种样式，包括none
+ 单边框样式：border-top-style border-left-style  border-right-style border-bottom-style
+ border-width：边框宽度
+ 单边框宽度：border-top-width···
+ border-color 边框颜色
+ 单边框颜色：border-top-color···
+ css3边框： border-radius:圆角边框
+            box-shadow:10px 10px 5px red 边框阴影 向左移动10像素，向下移动10像素，透明度，颜色
+            border-image:边框图片
+4-03 外边距合并
+  两个盒子都有外边距，会自动合并，变成较大的盒子的外边距值
+
+5 常用操作
+5-01 对齐操作
+ 使用margin属性进行水平对齐
+  margin-left:auto;
+  margin-right:auto;
+ 使用position属性进行左右对齐
+   position:absolute;
+   margin-left:0px;
+ 使用float属性进行左右对齐
+   float:left;
+ margin:0px(上下) auto（左右）;  
+
+
+5-02 分类
+ line-height:normal/200%/10px;   设置行间距
+ max-height:元素最大高度
+ max-width:最大宽度
+ min-height:最小宽度
+ min-width:最小高度
+ 分类操作属性
+ clear 设置一个元素的侧面是否允许其他的浮动元素
+ cursor 规定当指向某元素之上时显示的指针类型（鼠标显示样式）
+ display 设置是否及如何显示元素 display：inline；
+ float 定义元素在哪个方向浮动
+ position 把元素放置到一个静态的、相对的、绝对的、固定的位置
+ visibility 设置元素是否可见
+
+5-03 导航栏
+ 垂直导航栏
+ 水平导航栏
+ul{
+	list-style-type:none;
+	margin:0px;
+	background-color:#CFC;
+	width:200px;
+	text-align:center;
+	
+	
+	}
+a:link,a:visited{
+	text-decoration:none;
+	
+	background-color:#9C9;
+	width:50px;
+	text-align:center;
+	
+}
+a:active,a:hover{
+	background-color:#F9F;
+	color:#FFF;
+	
+}
+li{
+    display:inline;
+	padding:10px;
+}
+
+6 选择器
+元素选择器   p{ color：blue；}
+选择器分组   h1,h2{   }  通配符  *{   }
+类选择器     .div1{  }  a.class{  }（结合元素使用）  .class.class{  }（多类选择器，既具备两者所有性质，还有自己特有属性）
+ID选择器     #div{   } 
+类选择器和ID选择器区别：
+  ID只能在文档中使用一次，而类可以使用多次
+  ID选择器不能结合使用
+  当时用js时，用id
+
+
+属性选择器  [title(="")]{   }  [title~="title"]{  }(与之匹配的是含有“title”的title属性)
+后代选择器  p strong i{ }或者 p i{ }
+子元素选择器 只能选择一个层级关系 p>strong>i{   };
+相邻兄弟选择器
+
+7 css动画 页面特效
+7-01  通过css3转换，我们能对元素进行移动，缩放，拉长或拉伸
+  转换是使元素改变，尺寸和位置的一种效果
+  2D转换： translate()移动  rotate()旋转  scale()缩放  skew()倾斜 matrix()矩阵
+  3D转换：rotateX() rotateY()
+  -webkit-transform:translate(200px,100px); /*safari chrome*/
+  -ms-transform:translate(200px,100px); /*IE*/
+  -o-transform:translate(200px,100px);  /* opera*/
+  -moz-transform:translate(200px,100px);  /*Firefox*/
+  
+
+7-02  通过css3，给元素添加一些效果
+   动画效果的css
+   动画执行的时间
+   属性:
+   transition 设置四个过渡属性
+   transition-property 过渡的名称
+   transition-duration 过渡效果话费的时间
+   transition-timing-functiion 过渡效果的时间曲线
+   transition-delay 过渡效果开始时间
+  方框旋转着放大
+  div{
+	width:100px;
+	height:100px;
+	background-color:#09C;
+	-webkit-transition: width 2s,height 2s,-webkit-transform 2s;
+	transition: width 2s,height 2s,transform 2s;
+  }
+  div:hover{
+	width:200px;
+	height:200px;
+	transform:rotate(360deg);
+	-webkit-transform:rotate(360deg);
+  }
+7-03 通过css3 创建动画
+   css3动画需要遵循 @keyframes规则
+     规定动画时长
+     规定动画名称
+     //实现渐变动画，注意要进行浏览器适配
+     div{
+	width:100px;
+	height:100px;
+	background-color:red;
+	position:relative;
+	animation:anim 5s infinite alternate;
+	-webkit-animation:anim 5s infinite alternate;
+     }
+     @keyframes anim{
+ 	0%{background: red;left: 0px;top: 0px;}
+	50%{background: blue;left: 200px;top: 200px;}
+	100%{background: green;left: 400px;top: 0px;}
+      }
+     @-webkit-keyframes anim{
+	0%{background: red;left: 0px;top: 0px;}
+	50%{background: blue;left: 200px;top: 200px;}
+	100%{background: green;left: 400px;top: 0px;}
+      }
+7-04 css中，可以创建多列来对文本或者区域进行布局
+     属性：column-count 分列数
+           column-gap   间隔宽度
+           column-rule  分割线，线颜色
+           .div1{
+        column-count:3;
+	-webkit-column-count:3;
+	column-gap:30px;
+	-webkit-column-gap:30px;
+	column-rule:5px outset #FF0000;
+	-webkit-column-rule:5px outset #FF0000;
+         }
+7-05  css瀑布流效果
+      .container{
+	column-width:250px;
+	-webkit-column-width:250px;
+	column-gap:5px;
+	-webkit-column-gap:5px;
+        }
+       .container div{
+	width:250px;
+	margin:5px;
+ 	
+        }
+8  实战
+
+三 Javascript
+1. javascript事件
+   onClick    单击事件
+   onMouseOver  鼠标经过
+   onMouseOut  鼠标移出
+   onChange    文本内容改变
+   onSelect    文本框选中
+   onFocus    光标聚集事件
+   onBlur    移开光标
+   onLoad    网页加载
+   onUnload  关闭网页
+2.javaScript-DOM （document objective model）
+2-1 dom 操作html
+   1 改变html输出流：
+     注：绝对不要在文档加载完成之后使用document.write(),这样会覆盖该文档
+   2 寻找元素
+     通过id document.getElementById("div").innerHTML="``````"
+     通过标签名document.getElementsByTagName("p");//相同元素中的第一个
+   3 改变html内容
+     使用属性：innerHTML
+   4 改变html属性
+     使用属性：attribute
+2-2 dom操作css
+2-3 DOM EventListener
+     var x=document.getElementById("btn");
+	x.addEventListener("click",demo);
+    function demo(){
+	    alert("sfdfds");	
+    }

@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+}
+.top{
+    width：100%;
+	height:150px;
+	background-color:#000;
+}
+.top_content{
+	width:75%;
+	height:150px;
+	margin:0px auto;
+	background-color:#F69;
+}
+.body{
+	width:75%;
+	height:1000px;
+	margin:20px auto;
+    background-color:#00F;
+}
+.body_image{
+	width:100%;
+	height:300px;
+	background-color:#C33;
+	
+}
+.body_note{
+	width:100%;
+	height:100px;
+	background-color:#FC3;
+}
+.body_content{
+	width:100%;
+	height:600px;
+	background-color:pink;
+	
+}
+
